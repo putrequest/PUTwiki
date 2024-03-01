@@ -1,6 +1,6 @@
 # PUT wiki
 
-![PUTrequest_ logo](assets/logo/PUTr-1.png)
+![PUTrequest_ logo](assets/logo/PUTr.png)
 
 Wikipedia koła naukowego PUTrequest_ na Politechnice Poznańskiej.
 

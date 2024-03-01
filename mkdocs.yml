@@ -21,6 +21,9 @@ theme:
     - navigation.tabs
     - toc.integrate
 
+extra_css:
+  - style/style.css
+
 nav:
   - Introduction: 'index.md'
   - Forensics: 'forensics/forensics_wiki.md'

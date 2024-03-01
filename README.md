@@ -21,6 +21,8 @@ List of python dependencies is stored in `py-requirements.txt` file.
 
 `docs/assets` - subdirectory containing all assets used in wiki
 
+`docs/style` - subdirectory containing all CSS style files used in wiki
+
 ## Sources
 
 |Description|Link|
