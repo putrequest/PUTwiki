@@ -20,3 +20,12 @@ List of python dependencies is stored in `py-requirements.txt` file.
 `docs` - directory containing all wiki files
 
 `docs/assets` - subdirectory containing all assets used in wiki
+
+## Sources
+
+|Description|Link|
+|--|--|
+|source project| https://squidfunk.github.io/mkdocs-material/|
+|plugins|https://squidfunk.github.io/mkdocs-material/plugins/|
+|documentation|https://www.mkdocs.org/|
+|catalog of plugins|https://github.com/mkdocs/catalog|
