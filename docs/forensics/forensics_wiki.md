@@ -1,6 +1,6 @@
 ![Forensics_wiki_header](https://gist.github.com/assets/64504618/2439fd43-b385-4a06-95f2-e7526c1e7947)
 
-# ProTipy
+## ProTipy
 1. Zawsze warto sprawdzać otrzymane pliki komendą `file <filename>`! Jeśli zawartość pliku widnieje jako "`data`" to należy użyć innych narzędzi do wyciągnięcia naszych cennych informacji;
 2. Sprawdzaj metadane EXIF przy użyciu komendy `exiftool <filename>`;
 3. Używaj `strings` dla dodatkowych podpowiedzi;
@@ -31,14 +31,14 @@
        !! polecenie *mount* należy uruchamiać z prawami **admina**
        1. Na szczęście nie trzeba samemu wyliczać potrzebnego *offsetu*, część offsetową komendy można zapisać jako `offset=$((512*731136))` (shell sam sobie wyliczy wartość i przekaże do komendy)
 
-# Ciekawe stronki
+## Ciekawe stronki
 * https://gchq.github.io/CyberChef/ - Cyberchef
 * https://www.dcode.fr/xor-cipher - Przetwarzanie XOR tekstu
 * https://www.base64decode.org - Base64 decoder
 
-# Programy
+## Programy
 
-## Lista skryptów i komend
+### Lista skryptów i komend
 Lista mniejszych programów i skryptów (wraz z najczęściej używanymi flagami/argumentami)
 
 1. `file <filename>` - określa rodzaj pliku
@@ -48,28 +48,28 @@ Lista mniejszych programów i skryptów (wraz z najczęściej używanymi flagami
 5. `fdisk` - obsługa dyskowej tablicy partycji
 6. `mount` - montowanie obrazów
 
-## **Cyberchef** - wielozadaniowe narzędzie internetowe
+### **Cyberchef** - wielozadaniowe narzędzie internetowe
 * Za pomocą cyberchefa mamy możliwość przetworzenia danych na wszelkie sposoby, a jednocześnie możemy tworzyć "przepisy", czyli sekwencje przetwarzające po kolei konkretne dane wejściowe.
 
-## **Volatility** - analiza zrzutów pamięci 
+### **Volatility** - analiza zrzutów pamięci 
 * aktualnie bardziej zaawansowana wersja istnieje na Pythona 2 - i ma bardzo dużo poradników!
 * Na Pythonie 3 wersja jest ciągle w fazie rozwojowej - dużo funkcji nie działa...
 
-### Volatility - użycie
+#### Volatility - użycie
 
-## **Autopsy** - analiza obrazów dysków
+### **Autopsy** - analiza obrazów dysków
 
-## [**Process Monitor**](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
+### [**Process Monitor**](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
 Narzędzie do monitorowania i analizy aktywnych procesów w systemie. Przedstawia w czasie rzeczywistym informacje o systemie plików, rejestrze i aktywnych procesach.
 
-## [**ProcDump**](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump)
+### [**ProcDump**](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump)
 Narzędzie do tworzenia dumpów pamięci i nie tylko.
 
-## **G'MIC** - program do obróbki obrazów
+### **G'MIC** - program do obróbki obrazów
 * przydatny np. przy XORowaniu obrazów
   * `gmic <img_1> <img_2> -blend xor -o <result_img>`
 
-# Słowniczek
+## Słowniczek
 #### **magic numbers**
 - początkowe bajty pliku jednoznacznie identyfikujące konkretny typ, [przykładowa lista](https://www.garykessler.net/library/file_sigs.html), [druga lista](https://asecuritysite.com/forensics/magic); 
 
