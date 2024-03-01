@@ -1,3 +1,26 @@
 site_name: PUTwiki
 theme:
+  logo: assets/logo/PUTr_5050_mm.png
+  favicon: assets/logo/PUTr_icon.png
   name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: green
+      accent: light green
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: green
+      accent: lime
+  features:
+    - navigation.top
+    - navigation.tabs
+    - toc.integrate
+
+nav:
+  - Introduction: 'index.md'
+  - Forensics: 'forensics/forensics_wiki.md'
