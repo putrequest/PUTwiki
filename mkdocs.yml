@@ -2,6 +2,7 @@ site_name: PUTwiki
 my_description: Wikipedia koła naukowego PUTrequest_ na Politechnice Poznańskiej
 
 theme:
+  language: pl
   logo: assets/logo/PUTr_5050_mm.png
   favicon: assets/logo/PUTr_icon.png
   name: material
@@ -21,6 +22,8 @@ theme:
   features:
     - navigation.top
     - navigation.tabs
+    - content.code.copy
+    - navigation.footer
     - toc.integrate
   custom_dir: overrides
 
@@ -28,6 +31,13 @@ theme:
 
 markdown_extensions:
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
 
 # STYLING
 
@@ -50,10 +60,12 @@ extra:
 # NAVIGATION
 
 nav:
-  - Introduction: "index.md"
+  - Home: "index.md"
   - Forensics: 
     - Introduction: "forensics/forensics_wiki.md"
-    - Disk forensics: "forensics/disk_forensics/disk_forensics_intro.md"
+    - Disk forensics: 
+      - Disk forensics INTRO: "forensics/disk_forensics/disk_forensics_intro.md"
+      - Obsługa plików AD1: "forensics/disk_forensics/ad1_files_handling.md"
     - Memory forensics: "forensics/memory_forensics/memory_forensics_intro.md"
   - Crypto:
       - Introduction: "crypto/crypto_wiki.md"
