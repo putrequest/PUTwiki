@@ -1,5 +1,5 @@
 site_name: PUTwiki
-my_description: Wikipedia koła naukowego PUTrequest_ na Politechnice Poznańskiej.
+my_description: Wikipedia koła naukowego PUTrequest_ na Politechnice Poznańskiej
 
 theme:
   logo: assets/logo/PUTr_5050_mm.png
@@ -24,8 +24,17 @@ theme:
     - toc.integrate
   custom_dir: overrides
 
+# PLUGINS & EXTENSIONS
+
+markdown_extensions:
+  - attr_list
+
+# STYLING
+
 extra_css:
   - style/style.css
+
+# FOOTER LINKS
 
 extra:
   social:
@@ -37,6 +46,8 @@ extra:
       link: https://github.com/putrequest
     - icon: fontawesome/brands/linkedin
       link: https://pl.linkedin.com/company/putrequest
+
+# NAVIGATION
 
 nav:
   - Introduction: 'index.md'

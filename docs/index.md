@@ -2,14 +2,13 @@
 
 ![PUTrequest_ logo](assets/logo/PUTr.png)
 
-Wikipedia koła naukowego PUTrequest_ na Politechnice Poznańskiej.
-
----
-
 Na tej stronie można znaleźć spis przydatnych narzędzi oraz programów, z których korzystamy na spotkaniach poszczególnych sekcji koła.
 
 ## Lista sekcji
+
 W skład koła wchodzą sekcje:
+
+![Hackerman meme](assets/pics/hackerman_meme.jpg){width="500", align=right}
 
 - <h3>Analiza</h3>
 - <h3>Web</h3>
@@ -19,5 +18,3 @@ W skład koła wchodzą sekcje:
 - <h3>OSINT</h3>
 
 <center><h2>Owocnego hackowania!</h2></center>
-
-![Hackerman meme](assets/pics/hackerman_meme.jpg)
