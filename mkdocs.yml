@@ -20,10 +20,24 @@ theme:
     - navigation.top
     - navigation.tabs
     - toc.integrate
+  custom_dir: overrides
 
 extra_css:
   - style/style.css
 
+extra:
+  social:
+    - icon: fontawesome/brands/pied-piper
+      link: https://putrequest.put.poznan.pl/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/people/PUTrequest_/100086086582030/
+    - icon: fontawesome/brands/github
+      link: https://github.com/putrequest
+    - icon: fontawesome/brands/linkedin
+      link: https://pl.linkedin.com/company/putrequest
+
 nav:
   - Introduction: 'index.md'
-  - Forensics: 'forensics/forensics_wiki.md'
+  - Forensics: 
+    - Introduction: 'forensics/forensics_wiki.md'
+    - Disk forensics: 'forensics/disk_forensics/disk_forensics_intro.md'

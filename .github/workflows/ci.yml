@@ -19,4 +19,6 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
+      # For PNG images processing
+      - run: apt-get install pngquant
       - run: mkdocs gh-deploy --force
