@@ -39,7 +39,9 @@ extra:
       link: https://pl.linkedin.com/company/putrequest
 
 nav:
-  - Introduction: 'index.md'
-  - Forensics: 
-    - Introduction: 'forensics/forensics_wiki.md'
-    - Disk forensics: 'forensics/disk_forensics/disk_forensics_intro.md'
+  - Introduction: "index.md"
+  - Forensics:
+      - Introduction: "forensics/forensics_wiki.md"
+      - Disk forensics: "forensics/disk_forensics/disk_forensics_intro.md"
+  - Crypto:
+      - Introduction: "crypto/crypto_wiki.md"
