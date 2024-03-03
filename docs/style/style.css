@@ -7,3 +7,8 @@
     height: 3rem;
     width: auto;
 }
+
+.description-font{
+    font-size: medium;
+    font-style: italic;
+}
