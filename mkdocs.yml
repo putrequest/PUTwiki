@@ -54,3 +54,4 @@ nav:
   - Forensics: 
     - Introduction: 'forensics/forensics_wiki.md'
     - Disk forensics: 'forensics/disk_forensics/disk_forensics_intro.md'
+    - Memory forensics: 'forensics/memory_forensics/memory_forensics_intro.md'
