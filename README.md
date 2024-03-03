@@ -11,7 +11,7 @@
 4. Run project with command:
    1. `mkdocs serve`
 
-List of python dependencies is stored in `py-requirements.txt` file.
+List of python dependencies is also stored in `py-requirements.txt` file.
 
 ## Editing documents
 
