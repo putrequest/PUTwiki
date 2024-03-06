@@ -69,3 +69,5 @@ nav:
     - Memory forensics: "forensics/memory_forensics/memory_forensics_intro.md"
   - Crypto:
       - Introduction: "crypto/crypto_wiki.md"
+  - OSINT:
+      - Introduction: "osint/osint_wiki.md"

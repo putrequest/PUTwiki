@@ -15,6 +15,6 @@ W skład koła wchodzą sekcje:
 - [<h3>Forensics</h3>](forensics/forensics_wiki.md)
 - [<h3>Crypto</h3>](crypto/crypto_wiki.md)
 - <h3>Reverse</h3>
-- <h3>OSINT</h3>
+- [<h3>OSINT</h3>](osint/osint_wiki.md)
 
 <center><h2>Owocnego hackowania!</h2></center>
