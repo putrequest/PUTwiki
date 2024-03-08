@@ -63,9 +63,7 @@ RODO określa podstawy przetwarzania danych osobowych osób fizocznych na tereni
 * Selektor - informacja powiązana z figurantem np. e-mail, NIP, adres zamieszkania czy imię psa
 * Transformacja - przekształcenie selektora w inny selektor
 * Śledztwo - zbiór działań mających uzyskać określone dane dot. figuranta
-* False-positive - informacja fałszywie dodatnia
-
-W swoich załozeniach śledztwo ma doprowadzić do ustalenia konkretnej informacji np. czy osoba X jest udziałowcem spółki Y. Przeprowadzenie śledztwa, które zbierze "wszystko" poskutkuje jedynie ślepą nieskończoną pętlą, w której będziemy oddalać się od celu śledztwa. Innymi słowy nie ma sensu badać rodziny figuranta 9 pokoleń wstecz.
+* False-positive (błąd pierwszego rodzaju) - informacja fałszywie dodatnia
 
 * HUMINT, *human intelligence* - osobowe źródła informacji (OZI)
 * SOCMINT, SMINT, *social media intelligence* - wywiad mediów społecznościowych
@@ -85,6 +83,8 @@ Polski proces wywiadowczy definiuje doktryna *rozpoznanie wojskowe D/2*, zawiera
 4. **Rozpowszechnianie** jest terminowym i celowym przekazywaniem wiadomości rozpoznawczych z pomocą odpowiednich środków w określonej formie uprawnionym podmiotom. Owe formy dzielą się na: rozpowszechnianie elektroniczne, pisemne i graficzne, a także ustne.
 
 ![cyklwywiadowczy](Australijski_model_cyklu_wywiadowczego.jpg)
+
+W swoich załozeniach śledztwo ma doprowadzić do ustalenia konkretnej informacji np. czy osoba X jest udziałowcem spółki Y. Przeprowadzenie śledztwa, które zbierze "wszystko" poskutkuje jedynie ślepą nieskończoną pętlą, w której będziemy oddalać się od celu śledztwa. Innymi słowy nie ma sensu badać rodziny figuranta 9 pokoleń wstecz.
 
 ## [Źródła informacji](sources/sources_wiki.md)
 
@@ -107,7 +107,7 @@ v intitle:"Index of" .mysql_history – historia zapytań SQL z serwisów WWW
 Należy pamiętać, że Google nie musi indeksować każdego zasobu, ale z drugiej strony indeksuje często to co niekoniecznie powinno być publicznie dostępne. W przypadku wysyłania wielu złożonych zapytań Google może wymagać wypełniania Captchy.
 
 ## Software
-* [Maltego](https://www.maltego.com) - oprogramowanie pełni dwie role. Z jednej strony pozwala na obrazowanie selektorów w postaci grafów i umozliwia stworzenie całej "tablicy dowodów". Z drugiej pozwala ono na automatyzację transformacji np. poprzez integrację z róznymi API. Jest jedną z popularniejszych aplikacji, ale pomimo popuularnego przeświadczenia nie zrobi śledztwa za nas. Więcej o Maltego [TUTAJ](maltego/maltego_wiki.md).
+* [Maltego](https://www.maltego.com) - oprogramowanie pełni dwie role. Z jednej strony pozwala na obrazowanie selektorów w postaci grafów i umozliwia stworzenie całej "tablicy dowodów". Z drugiej pozwala ono na automatyzację transformacji np. poprzez integrację z róznymi API. Jest jedną z popularniejszych aplikacji, ale pomimo popularnego przeświadczenia nie zrobi śledztwa za nas. Więcej o Maltego [TUTAJ](maltego/maltego_wiki.md).
 * [Recon-ng](https://github.com/paralax/Recon-ng) - alternatywne dla Maltego narzędzie słuzące do prowadzenia transformacji automatycznych w oparciu o dołączone wtyczki.
 * [Project Sherlock](https://github.com/sherlock-project/sherlock) - oprogramowanie do wyszukiwania kont w oparciu o pseudonim.
 * [Spiderfoot](https://github.com/smicallef/spiderfoot) - program przeznaczony do threat intelligence.
@@ -156,7 +156,9 @@ Przyjmuje się, ze działania operacyjne powinny być prowadzone w przygotowanyc
 
 Pod kątem komputerów sprawdzają się takie hipervisory takie jak VMware czy Hyper-V. Dla urządzeń mobilnych wartym rozwazenia jest emulator Android Studio lub [Genymotion](https://www.genymotion.com). Im więcej funkcji posiada oprogramowanie tym lepiej.
 
-Warto pamiętać, ze identyfikację umozliwić moze wiele innych aspektów np. [fingerprint przeglądarki](https://amiunique.org). Jeżeli chcesz zobaczyc co może zdradzic o Tobie sama przeglądarka zajrzyj [tutaj](http://clickclickclick.click/).
+Warto pamiętać, ze identyfikację umozliwić moze wiele innych aspektów np. wersja oprogramowania, używany język czy wtyczki w przeglądarce - tzw. [fingerprint przeglądarki](https://amiunique.org). Jeżeli chcesz zobaczyc co może zdradzic o Tobie samo zachowanie w przeglądarce zajrzyj [tutaj](http://clickclickclick.click/).
+
+Używany system operacyjny należy dostosować do potrzeb i przeznaczenia. Warto rozdzielić maszynę do operacyjnego pozyskiwania danych z maszyną do logowań na konta operacyjne. Z uwagi na możliwość niektórych serwisów do wykrywania systemu operacyjnego klienta warto jest skupić się na popularnych wersjach Windowsa. Do przetwarzania danych warto jest spojrzeć na dedykowane ku temu dystrybucje Linuxa np. Kali lub Tsurugi.
 
 ## Ciekawe case study
 * [Otrucie Skripala](https://www.bellingcat.com/news/uk-and-europe/2018/10/09/full-report-skripal-poisoning-suspect-dr-alexander-mishkin-hero-russia/)
@@ -164,3 +166,8 @@ Warto pamiętać, ze identyfikację umozliwić moze wiele innych aspektów np. [
 * [Sprawa Natalii Janoszek](https://youtu.be/oKYBBVQa8NY)
 * [Kampania scamowa](https://keyfindings.blog/2019/08/28/unravelling-the-norton-scam/)
 * [Anatomy of a killing](https://twitter.com/BBCAfrica/status/1044186344153583616)
+
+## Metryka zmian
+| Wersja       | Data       | Osoba             | Opis zmian                         |
+| ------------ | ---------- | ----------------- | ---------------------------------- |
+| v1.0.0       | 08.03.2024 | Grzegorz Jaskuła  | Wersja bazowa                      |

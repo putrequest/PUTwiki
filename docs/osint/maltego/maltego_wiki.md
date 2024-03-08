@@ -1,5 +1,5 @@
 Maltego to oprogramowanie wykorzystywane do wywiadu i kryminalistyki typu open source, opracowane przez Paterva z Pretorii w RPA. Narzędzie to wykorzystywane jest do obrazowania selektorów oraz do transformacji automatycznych.
-Maltego można pobrać z [https://www.maltego.com/downloads/].
+Maltego można pobrać [tutaj](https://www.maltego.com/downloads/).
 Przy pierwszym uruchomieniu konieczne będzie wygenerowanie licencji. Wybierz Maltego CE. Zaakceptuj warunki licencyjne i zaloguj się na konto. Maltego pobierze niezbędne informacje. Postępuj zgodnie z instrukcjami. W Privacy Mode wybierz opcję Normal.
 
 ![license](maltego_welcome.png)
@@ -44,7 +44,7 @@ Wybierz z listy DNS from Domain > TO DNS Name – NS. Spowoduje to uruchomienie 
 ![alt text](maltego_auto4.png)
 
 ## Import danych
-Maltego pozwala automatycznie pobierać dane z ustrukturyzowanych plików takich jak XML, XLS, JSON itp. oraz przetwarzać je na konkretne powiązane ze sobą selektory. Przejdź do zakładki Import|Eksport i wybierz opcję Import 3rd party table. 
+Maltego pozwala automatycznie pobierać dane z ustrukturyzowanych plików takich jak XML, XLS, JSON itp. oraz przetwarzać je na konkretne powiązane ze sobą selektory. Jako przykład wykorzystane plik Excela z planem sesji egzaminacyjnej. Przejdź do zakładki Import|Eksport i wybierz opcję Import 3rd party table. 
 
 ![alt text](maltego_import1.png)
 
@@ -123,3 +123,8 @@ class DNSToIP(DiscoverableTransform):
 ```
 
 Biblioteka ta dodatkowo pozwala wyeksportować transformacje do pliku *.mtz*, który można bezpośrednio zaimportować do Maltego.
+
+## Metryka zmian
+| Wersja       | Data       | Osoba             | Opis zmian                         |
+| ------------ | ---------- | ----------------- | ---------------------------------- |
+| v1.0.0       | 08.03.2024 | Grzegorz Jaskuła  | Wersja bazowa                      |
