@@ -60,12 +60,16 @@ extra:
 # NAVIGATION
 
 nav:
-  - Home: "index.md"
+  - 🏠: "index.md"
+  - Crypto:
+    - Wprowadzenie: "crypto/crypto_wiki.md"
   - Forensics: 
-    - Introduction: "forensics/forensics_wiki.md"
+    - Wprowadzenie: "forensics/forensics_wiki.md"
     - Disk forensics: 
       - Disk forensics INTRO: "forensics/disk_forensics/disk_forensics_intro.md"
       - Obsługa plików AD1: "forensics/disk_forensics/ad1_files_handling.md"
     - Memory forensics: "forensics/memory_forensics/memory_forensics_intro.md"
-  - Crypto:
-      - Introduction: "crypto/crypto_wiki.md"
+  - Reverse:
+    - Wprowadzenie: "reverse/reverse_wiki.md"
+  - Web:
+    - Wprowadzenie: "web/web_wiki.md"
