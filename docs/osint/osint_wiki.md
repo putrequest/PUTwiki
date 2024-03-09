@@ -82,7 +82,8 @@ Polski proces wywiadowczy definiuje doktryna *rozpoznanie wojskowe D/2*, zawiera
 3. **Przetwarzanie** to przekształcanie zgromadzonych danych w wiadomości rozpoznawcze. Głównymi etapami tej fazy są: zestawianie (ewidencja), ocena (pewności źródła i wiarygodności), analiza i integracja oraz interpretacja;
 4. **Rozpowszechnianie** jest terminowym i celowym przekazywaniem wiadomości rozpoznawczych z pomocą odpowiednich środków w określonej formie uprawnionym podmiotom. Owe formy dzielą się na: rozpowszechnianie elektroniczne, pisemne i graficzne, a także ustne.
 
-![cyklwywiadowczy](Australijski_model_cyklu_wywiadowczego.jpg)
+![cyklwywiadowczy](../assets/osint/intro_australianIntelCycle.jpg){style="display: block; margin: 0 auto;" }
+<figcaption>Australijski model cyklu wywiadoczego (źródło: Wikipedia)</figcaption>
 
 W swoich załozeniach śledztwo ma doprowadzić do ustalenia konkretnej informacji np. czy osoba X jest udziałowcem spółki Y. Przeprowadzenie śledztwa, które zbierze "wszystko" poskutkuje jedynie ślepą nieskończoną pętlą, w której będziemy oddalać się od celu śledztwa. Innymi słowy nie ma sensu badać rodziny figuranta 9 pokoleń wstecz.
 
@@ -168,6 +169,7 @@ Używany system operacyjny należy dostosować do potrzeb i przeznaczenia. Warto
 * [Anatomy of a killing](https://twitter.com/BBCAfrica/status/1044186344153583616)
 
 ## Metryka zmian
-| Wersja       | Data       | Osoba             | Opis zmian                         |
-| ------------ | ---------- | ----------------- | ---------------------------------- |
-| v1.0.0       | 08.03.2024 | Grzegorz Jaskuła  | Wersja bazowa                      |
+| Wersja       | Data       | Osoba             | Opis zmian                                      |
+| ------------ | ---------- | ----------------- | ----------------------------------------------- |
+| v1.0.0       | 08.03.2024 | Grzegorz Jaskuła  | Wersja bazowa                                   |
+| v1.0.0a      | 09.03.2024 | Grzegorz Jaskuła  | Pliki graficzne przeniesione do folderu /assets |

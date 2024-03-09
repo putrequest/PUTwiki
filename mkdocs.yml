@@ -70,4 +70,6 @@ nav:
   - Crypto:
       - Introduction: "crypto/crypto_wiki.md"
   - OSINT:
-      - Introduction: "osint/osint_wiki.md"
+    - Introduction: "osint/osint_wiki.md"
+    - Maltego: "osint/maltego/maltego_wiki.md"
+    - Źródła: "osint/sources/sources_wiki.md"
