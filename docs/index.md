@@ -13,7 +13,7 @@ W skład koła wchodzą sekcje:
 - <h3>Analiza</h3>
 - [<h3>Crypto</h3>](crypto/crypto_wiki.md)
 - [<h3>Forensics</h3>](forensics/forensics_wiki.md)
-- <h3>OSINT</h3>
+- [<h3>OSINT</h3>](osint/osint_wiki.md)
 - [<h3>Reverse</h3>](reverse/reverse_wiki.md)
 - [<h3>Web</h3>](web/web_wiki.md)
 

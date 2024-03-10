@@ -69,6 +69,10 @@ nav:
       - Disk forensics INTRO: "forensics/disk_forensics/disk_forensics_intro.md"
       - Obsługa plików AD1: "forensics/disk_forensics/ad1_files_handling.md"
     - Memory forensics: "forensics/memory_forensics/memory_forensics_intro.md"
+  - OSINT:
+    - Wprowadzenie: "osint/osint_wiki.md"
+    - Maltego: "osint/maltego/maltego_wiki.md"
+    - Źródła: "osint/sources/sources_wiki.md"
   - Reverse:
     - Wprowadzenie: "reverse/reverse_wiki.md"
   - Web:
