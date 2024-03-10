@@ -35,12 +35,23 @@ Baadnie pamięci wbrew pozorom nie jest takie skomplikowane - najistotniejszą k
 
 1. Komendą `strings` wyszukujemy jakichś wskazówek
 2. Identyfikujemy profil obrazu (jaki OS, wersja, etc.)
+    1. W `Volatility3` identyfikacja profilu jest zbędna - można natomiast otrzymać dodatkowe informacje o oryginalnym systemie
 3. Analizujemy listę procesów i szukamy podejrzanych rekordów
 4. Analizujemy historię commandline i listę plików - znowu szukamy podejrzanych rekordów
 
+
 ## Profilowanie obrazu
 
-TODO: opisać profilowanie
+Profilowanie jest prowadzone w `Volatility2`, by móc ustalić jaki był pierwotny system analizowanego obrazu pamięci.
+
+=== "Volatility 2"
+    ``` vol2
+    vol.py -f "ścieżka/do/pliku" imageinfo
+    ```
+=== "Volatility 3"
+    ``` vol3
+    vol.py -f "ścieżka/do/pliku" windows.info
+    ```
 
 ## Analiza procesów
 
