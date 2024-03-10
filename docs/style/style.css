@@ -8,7 +8,14 @@
     width: auto;
 }
 
-.description-font{
+.description-header{
     font-size: medium;
     font-style: italic;
+    display: block;
+}
+
+@media screen and (max-width: 800px){
+    .description-header{
+        display: none;
+    }
 }
