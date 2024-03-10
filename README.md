@@ -6,6 +6,8 @@
 1. Clone repository
 2. Install Python
    1. Currently used version is `3.12.1`
+   2. Create a virtual environment - not necessary, but **recommended**
+      1. `python -m venv <virtual_environment_name>`
 3. Install MkDocs
    1. `pip install mkdocs-material`
 4. Run project with command:
