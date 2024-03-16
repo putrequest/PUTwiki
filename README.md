@@ -29,8 +29,8 @@ List of python dependencies is also stored in `py-requirements.txt` file.
 
 | Description        | Link                                                   |
 |--------------------|--------------------------------------------------------|
+| **_REFERENCES_**   | https://squidfunk.github.io/mkdocs-material/reference/ |
 | source project     | https://squidfunk.github.io/mkdocs-material/           |
 | plugins            | https://squidfunk.github.io/mkdocs-material/plugins/   |
 | documentation      | https://www.mkdocs.org/                                |
 | catalog of plugins | https://github.com/mkdocs/catalog                      |
-| **_REFERENCES_**   | https://squidfunk.github.io/mkdocs-material/reference/ |
