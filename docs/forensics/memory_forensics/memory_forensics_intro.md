@@ -92,7 +92,6 @@ Do analizy procesów możemy użyć różnego rodzaju pluginów, zależnie od po
     - psscan
     - pstree
 
-
 === "Volatility 3"
     ```
     vol.py -f "ścieżka/do/pliku" <plugin>
@@ -104,9 +103,67 @@ Do analizy procesów możemy użyć różnego rodzaju pluginów, zależnie od po
     - windows.psscan
     - windows.pstree
 
-## Dump procesów/plików
+## Dumpowanie danych
 
-TODO: opisać dumpowanie + przykłady
+### Dump procesów
+
+Dump procesów o konkretnym PID (np. pliki .exe).
+
+`Volatility 3` dodatkowo dumpuje powiązane pliki DLL.
+
+Używany np. do reverse engineeringu plików wykonywalnych procesów - w poszukiwaniu sygnatur malware'u bądź podobnych.
+
+=== "Volatility 2"
+    ```
+    vol.py -f "ścieżka/do/pliku" --profile=<profil> procdump -p <PID> --dump-dir="ścieżka/do/zapisu"
+    ```
+
+=== "Volatility 3"
+    ```
+    vol.py -f "ścieżka/do/pliku" -o "ścieżka/do/zapisu" windows.dumpfiles --pid <PID>
+    ```
+
+### Dump pamięci
+
+Dump pamięci podręcznej procesów o konkretnym PID - może przechowywać dodatkowe informacje wykorzystywane przez proces w trakcie jego działania.
+
+=== "Volatility 2"
+    ```
+    vol.py -f "ścieżka/do/pliku" --profile=<profil> memdump -p <PID> --dump-dir="ścieżka/do/zapisu"
+    ```
+
+=== "Volatility 3"
+    ```
+    vol.py -f "ścieżka/do/pliku" -o "ścieżka/do/zapisu" windows.memmap --dump --pid <PID>
+    ```
+
+### Dump plików
+
+Najpierw należy przeskanować listę dostępnych plików, a następnie wykorzystać informacje o `offsecie` w którym ten plik się znajduje.
+
+1. ==Skanujemy== w poszukiwaniu plików:
+
+=== "Volatility 2"
+    ```
+    vol.py -f "ścieżka/do/pliku" --profile=<profil> filescan"
+    ```
+
+=== "Volatility 3"
+    ```
+    vol.py -f "ścieżka/do/pliku" windows.filescan
+    ```
+
+2. ==Wyciągamy== plik o danym offsecie:
+
+=== "Volatility 2"
+    ```
+    vol.py -f "ścieżka/do/pliku" --profile=<profil> dumpfiles --dump-dir="ścieżka/do/zapisu" -Q <offset>
+    ```
+
+=== "Volatility 3"
+    ```
+    vol.py -f "ścieżka/do/pliku" -o "ścieżka/do/zapisu" windows.dumpfiles
+    ```
 
 ## Źródła
 
