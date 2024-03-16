@@ -1,15 +1,21 @@
 ![Forensics_wiki_header](https://gist.github.com/assets/64504618/2439fd43-b385-4a06-95f2-e7526c1e7947)
 
 ## ProTipy
-1. Zawsze warto sprawdzać otrzymane pliki komendą `file <filename>`! Jeśli zawartość pliku widnieje jako "`data`" to należy użyć innych narzędzi do wyciągnięcia naszych cennych informacji;
-2. Sprawdzaj metadane EXIF przy użyciu komendy `exiftool <filename>`;
-3. Używaj `strings` dla dodatkowych podpowiedzi;
-4. Do filecarvingu/wyciągania plików z plików można użyć:
-   1. `binwalk <filename>` - samo polecenie tylko wyświetla możliwą zawartość pliku na podstawie znalezionych [`magic numbers`](#magic-numbers);
-   2. `foremost <filename>` - znajduje i ekstraktuje pliki do folderu `output` w tej samej lokalizacji;
-   3. `steghide`
-   4. `zsteg`
-5. Jeśli plik ma rozszerzenie `.img` oznacza to, że jest to zrzut obrazu całego dysku - plik zawiera w sobie bootloader i tabelę partycji & należy znaleźć odpowiedni [`offset`](#offset) partycji, żeby móc ją zamontować i przeglądać dane w niej zawarte. Do tego zadania najłatwiej jest użyć narzędzia `fdisk`.
+- Zawsze warto sprawdzać otrzymane pliki komendą `file <filename>`! Jeśli zawartość pliku widnieje jako "`data`" to należy użyć innych narzędzi do wyciągnięcia naszych cennych informacji;
+- Sprawdzaj metadane EXIF przy użyciu komendy `exiftool <filename>`;
+- Używaj `strings` dla dodatkowych podpowiedzi;
+
+<div class="annotate" markdown>
+- Do filecarvingu/wyciągania plików z plików można użyć:
+    1. `binwalk <filename>` - samo polecenie tylko wyświetla możliwą zawartość pliku na podstawie znalezionych [`magic numbers`](#magic-numbers) (1)
+    2. `foremost <filename>` - znajduje i ekstraktuje pliki do folderu `output` w tej samej lokalizacji
+    3. `steghide`
+    4. `zsteg`
+</div>
+
+1. [klik](#magic-numbers)
+
+2. Jeśli plik ma rozszerzenie `.img` oznacza to, że jest to zrzut obrazu całego dysku - plik zawiera w sobie bootloader i tabelę partycji & należy znaleźć odpowiedni [`offset`](#offset) partycji, żeby móc ją zamontować i przeglądać dane w niej zawarte. Do tego zadania najłatwiej jest użyć narzędzia `fdisk`.
    1. Wpisując `fdisk -l <path/to/image>` otrzymujemy informacje o dumpie przechowywanym w pliku
    ![Linux101 Managing_drive_mount_drive](https://gist.github.com/assets/64504618/6c827fa5-0611-4d51-9ca9-dfd893e37732)
    2. Przykładowo możemy odczytać block-size i start-block interesującej nas partycji.
@@ -30,6 +36,8 @@
        
        !! polecenie *mount* należy uruchamiać z prawami **admina**
        1. Na szczęście nie trzeba samemu wyliczać potrzebnego *offsetu*, część offsetową komendy można zapisać jako `offset=$((512*731136))` (shell sam sobie wyliczy wartość i przekaże do komendy)
+
+3. check
 
 ## Ciekawe stronki
 * https://gchq.github.io/CyberChef/ - Cyberchef

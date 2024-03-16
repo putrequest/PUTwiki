@@ -23,6 +23,7 @@ theme:
     - navigation.top
     - navigation.tabs
     - content.code.copy
+    - content.tabs.link
     - navigation.footer
     - toc.integrate
   custom_dir: overrides
@@ -37,7 +38,19 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - footnotes
+  - def_list  # definition lists: https://squidfunk.github.io/mkdocs-material/reference/lists/#using-definition-lists
+  # annotations
+  - attr_list
+  - md_in_html
+  # formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 # STYLING
 
