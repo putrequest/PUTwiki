@@ -1,0 +1,1 @@
+*[REGEX]: Wyrażenia regularne/regex - wzorce opisujące łańcuch symboli
