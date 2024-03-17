@@ -26,11 +26,22 @@ theme:
     - content.tabs.link
     - navigation.footer
     - toc.integrate
+    - content.tooltips
   custom_dir: overrides
 
+watch:
+  - includes
+
 # PLUGINS & EXTENSIONS
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: squidfunk/mkdocs-material
+      branch: main
 
 markdown_extensions:
+  - abbr
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -51,6 +62,13 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  # snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary.md
+
+  - toc:
+      permalink: true
 
 # STYLING
 
@@ -78,6 +96,7 @@ nav:
     - Wprowadzenie: "crypto/crypto_wiki.md"
   - Forensics: 
     - Wprowadzenie: "forensics/forensics_wiki.md"
+    - Commandline: "forensics/forensics_commandline.md"
     - Disk forensics: 
       - Disk forensics INTRO: "forensics/disk_forensics/disk_forensics_intro.md"
       - Obsługa plików AD1: "forensics/disk_forensics/ad1_files_handling.md"

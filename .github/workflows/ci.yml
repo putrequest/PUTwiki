@@ -19,4 +19,8 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
+      # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/?h=revision#revisioning
+      - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-git-committers-plugin-2
+      
       - run: mkdocs gh-deploy --force
