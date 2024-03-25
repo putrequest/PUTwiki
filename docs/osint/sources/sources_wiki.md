@@ -48,9 +48,10 @@ Do tego dorzucić mozna wszelkie media społecznościowe (SOCMINT), scrapery czy
 
 ## Popularne narzędzia
 
-- Rozpoznawanie twarzy
+- Rozpoznawanie twarzy, wyszukiwanie graficzne
     - [Pimeyes](https://pimeyes.com/en)
     - [Facecheck](https://facecheck.id)
+    - [Tineye](https://tineye.com)
 - Geolokalizacja
     - [GeoSpy](https://geospy.ai)
 - SOCMINT
@@ -59,6 +60,7 @@ Do tego dorzucić mozna wszelkie media społecznościowe (SOCMINT), scrapery czy
     - [yt-dl](https://github.com/ytdl-org/youtube-dl) i jego forki
     - [facebook-scraper](https://github.com/kevinzg/facebook-scraper)
     - [Instagram photo viewer](https://inflact.com/downloader/instagram/avatar/)
+    - [BeenVerified](https://www.beenverified.com) (nie działa w UE)
 - Analiza plików
     - [Metadata2go](https://www.metadata2go.com)
     - [Fotoforensics](https://fotoforensics.com) oraz [29a.ch](https://29a.ch/sandbox/2012/imageerrorlevelanalysis/)
@@ -76,3 +78,4 @@ Do tego dorzucić mozna wszelkie media społecznościowe (SOCMINT), scrapery czy
 | Wersja       | Data       | Osoba             | Opis zmian                         |
 | ------------ | ---------- | ----------------- | ---------------------------------- |
 | v1.0.0       | 08.03.2024 | Grzegorz Jaskuła  | Wersja bazowa                      |
+| v1.0.1       | 20.03.204  | Grzegorz Jaskuła  | Dodany Tineye i BeenVerified       |

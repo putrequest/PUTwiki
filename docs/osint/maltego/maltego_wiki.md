@@ -80,10 +80,10 @@ Trzeba pamiętać, że niekażda wtyczka jest darmowa; niektóre zaś mogą wyma
 * Standard Transforms CE - domyślny zestaw transformacji w wersji Community.
 * CaseFile Entitties - zestaw selektorów z wersji Maltego CaseFile.
 * IPinfo - wtyczka zbierająca dane nt. adresów IP.
-* Have I been pwned? - wtyczka zapewniająca integrację z serwisem [http://haveibeenpwned.com](Have I been pwned) sprawdzająca obecność adresów email w wyciekach danych.
-* Shodan - integruje Maltego z [https://shodan.io](Shodan.io). **Wymaga klucza API**.
+* Have I been pwned? - wtyczka zapewniająca integrację z serwisem [Have I been pwned](http://haveibeenpwned.com) sprawdzająca obecność adresów email w wyciekach danych.
+* Shodan - integruje Maltego z [Shodan.io](https://shodan.io). **Wymaga klucza API**.
 * Social Links CE - darmowa wersja wtyczki do analizy mediów społecznościowych.
-* Wayback Machine - wtyczka wyszukująca archiwalne wersje stron WWW z [https://archive.org](Archive.org).
+* Wayback Machine - wtyczka wyszukująca archiwalne wersje stron WWW z [Archive.org](https://archive.org).
 * WHOIS XML API - wtyczka zapewniająca możliwość odpytywania niektórych baz WHOIS.
 
 ## Własne transformacje
@@ -129,3 +129,4 @@ Biblioteka ta dodatkowo pozwala wyeksportować transformacje do pliku *.mtz*, kt
 | ------------ | ---------- | ----------------- | ----------------------------------------------- |
 | v1.0.0       | 08.03.2024 | Grzegorz Jaskuła  | Wersja bazowa                                   |
 | v1.0.0a      | 09.03.2024 | Grzegorz Jaskuła  | Pliki graficzne przeniesione do folderu /assets |
+| v1.0.0b      | 20.03.2024 | Grzegorz Jaskuła  | Poprawiono odnośniki                            |
