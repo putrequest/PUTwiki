@@ -105,6 +105,7 @@ nav:
     - Wprowadzenie: "osint/osint_wiki.md"
     - Maltego: "osint/maltego/maltego_wiki.md"
     - Źródła: "osint/sources/sources_wiki.md"
+    - OPSEC: "osint/opsec/opsec_wiki.md"
   - Reverse:
     - Wprowadzenie: "reverse/reverse_wiki.md"
   - Web:
