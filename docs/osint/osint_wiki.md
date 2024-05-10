@@ -153,46 +153,7 @@ Wyszukiwarki umożliwiają wyszukiwanie wsteczne z użyciem obrazu. Ich możliwo
 * [DownThemAll](https://www.downthemall.net) - wtyczka do masowego pobierania plików ze stron WWW.
 * [dnsenum](https://www.kali.org/tools/dnsenum/) - narzędzie do enumeracji przestrzeni DNS. Pozwala na znajdowanie subdomen, które nie są przechowywane w bazach WHOIS.
 
-## OPSEC
-**Bezpieczeństwo operacyjne** (ang. *operations security*, OPSEC) - proces, który identyfikuje krytyczne informacje w celu ustalenia, czy przyjazne działania mogą być obserwowane przez wywiad wroga. Określa, czy uzyskane informacje mogą być użyteczne. W naszych przypadku to wdrożenie środków mających na celu zniwelowanie ryzyka ujawnienia krytycznych informacji. Nie chcemy w końcu by ktoś dowiedział się, ze się nim interesujemy oraz zeby odwiedzili nas smutni panowie w garniturach. Początki tego terminu sięgają wojny w Wietnamie.
-
-OPSEC moze dotyczyć wielu obszarów; od kwesti połączenia z internetem po niepodawanie swojego prawdziwego nazwiska w formularzu kontaktowym na stronie WWW. **Zachowanie anonimowości jest mozliwe, ale wymaga wielu wyrzeczeń, a błędy mogą być kosztowne.** Nic nie da łączenie się ze stroną przez Tor-over-VPN i rejestrowanie się na jednorazowy mail jezeli w formie płatności podamy naszą kartę debetową. Pamiętaj, że niekażde śledztwo wymagać będzie stosowania wszystkich środków bezpieczeństwa operacyjnego.
-
-### Konta operacyjne
-Konta operacyjne słuzyć mają przeglądaniu m.in. mediów społecznościowych. W przeciwieństwie do pospolitego "fejka" mają one wyglądać jak najbardziej prawdziwie i posiadać mozliwie długą historię. W tym przypadku przydatne okazą się być generatory [personaliów](https://www.fakenamegenerator.com) czy [twarzy](https://thispersondoesnotexist.com). Warto jest jednak zaznaczyć, ze niektóre platformy (np. Facebook) są wyczulone na treści z generatorów, dlatego warto poddać je mniejszej lub większej obróbce.
-
-O czym warto pamiętać:
-
-* Wiele serwisów (np. FB) jest wyczulonych na zdjęcia generowane przez AI. Da się jednak oszukać algorytmy modyfikując zdjęcie często w prosty sposób np. kadrowanie. Działa to np. w przypadku stosowania zdjęć z *thispersondoesnotexist.com*, w których pozycja oczu osoby jest prawie zawsze w tym samym miejscu.
-* Niektóre serwisy jak LinkedIn powiadamiają użytkownika o tym, że inny użytkownik wyświetlał jej profil.
-* Niektóre serwisy mogą wymusić dodatkowe uwierzytelnianie np. numerem telefonu (jak Google) czy sięgać nawet po skrajne metody takie jak żądanie przesłania skanu dowodu tożsamości (czasem Facebook). Może być to zależne od np. stosowania VPN czy domeny maila.
-* Warto jest spisać historię/biografię postaci, która ma stać za wybranym kontem operacyjnym: kim jest, skąd pochodzi, gdzie pracuje, ile ma dzieci i jaki sos do kebaba lubi najbardziej.
-* Zalecane jest stosowanie kont operacyjnych razem z innymi narzędziami OPSECowymi np. sieciami VPN oraz logowanie sie na nie na maszynach wirtualnych.
-
-### Łączenie z siecią
-
-Do ukrywania IP mozna wykorzystać między innymi:
-
-* VPNy i Proxy - w załozeniu mają ukryć nasz faktyczny adres IP. Nie da się jednak jednoznacznie stwierdzić czy dostawca VPNa nie trzyma logów i nie sprzeda ich słuzbom.
-* Publiczne punkty dostępowe - wbrew ich "wątpliwemu bezpieczeństwu" korzystanie z publicznego Wi-Fi może utrudnić namierzenie danej osoby z uwagi na dużą rotację podłączonych urządzeń. Należy zwrócić jednak uwagę na aspekt bezpieczeństwa przy korzystaniu z takiego publicznego AP i unikania nieszyfrowanej komunikacji. Ponadto właściciel AP może w dalszym ciągu obserwować z jakimi adresami IP nawiązujemy połączenie nawet jeżeli sama treść komunikacji jest szyfrowana.
-* [Tor](https://www.torproject.org/download/) - łączenie z siecią wykorzystujące [trasowanie cebulowe](https://pl.wikipedia.org/wiki/Trasowanie_cebulowe). Tor łączy się z serwerem docelowym poprzez szyfrowaną komunikację przechodzącą przez kilka (zwykle 4-5) węzłów pośredniczących. W teorii powoduje to, że żaden węzeł nie ma pełnej wiedzy o źródle i celu ruchu, jednak kosztem niskiej przepływności i opóźnień. Należy pamiętac, ze węzły Tora są publicznie znane a np. nasz ISP może łatwo ustalić, że się z nim łączymy. Tor może zostać połączony z siecią VPN w konfiguracji VPN-over-Tor lub Tor-over-VPN, w którym wchodzimy do tunelu VPN po przejściu przez Tora lub odwrotnie.
-
-### Komunikacja
-
-* Anonimowe maile np. [Proton](https://proton.me), [Tutanota](https://tuta.com)
-* Maile jednorazowe np. [Tempmail](https://temp-mail.org/pl/)
-* Numery tymczasowe np. [ReceiveSMS](https://receive-smss.com)
-* Karty SIM bez rejestracji. Obecnie najtaniej wychodzi czeski T-Mobile (kilkanaście PLN na allegro).
-
-### Maszyny wirtualne
-
-Przyjmuje się, ze działania operacyjne powinny być prowadzone w przygotowanych do tego izolowanych środowiskach a kazde powinno odpowiadać danemu śledztwu. Warto jest zapewnić pełną izolację środowiska operacyjnego oraz jego bezpieczeństwo np. poprzez szyfrowanie.
-
-Pod kątem komputerów sprawdzają się takie hipervisory takie jak VMware czy Hyper-V. Dla urządzeń mobilnych wartym rozwazenia jest emulator Android Studio lub [Genymotion](https://www.genymotion.com). Im więcej funkcji posiada oprogramowanie tym lepiej.
-
-Warto pamiętać, ze identyfikację umozliwić moze wiele innych aspektów np. wersja oprogramowania, używany język czy wtyczki w przeglądarce - tzw. [fingerprint przeglądarki](https://amiunique.org). Jeżeli chcesz zobaczyc co może zdradzic o Tobie samo zachowanie w przeglądarce zajrzyj [tutaj](http://clickclickclick.click/).
-
-Używany system operacyjny należy dostosować do potrzeb i przeznaczenia. Warto rozdzielić maszynę do operacyjnego pozyskiwania danych z maszyną do logowań na konta operacyjne. Z uwagi na możliwość niektórych serwisów do wykrywania systemu operacyjnego klienta warto jest skupić się na popularnych wersjach Windowsa. Do przetwarzania danych warto jest spojrzeć na dedykowane ku temu dystrybucje Linuxa np. Kali lub Tsurugi.
+## [OPSEC](opsec/opsec_wiki.md)
 
 ## Ciekawe case study
 * [Otrucie Skripala](https://www.bellingcat.com/news/uk-and-europe/2018/10/09/full-report-skripal-poisoning-suspect-dr-alexander-mishkin-hero-russia/)
@@ -201,6 +162,7 @@ Używany system operacyjny należy dostosować do potrzeb i przeznaczenia. Warto
 * [Kampania scamowa Norton](https://keyfindings.blog/2019/08/28/unravelling-the-norton-scam/)
 * [Anatomy of a killing](https://twitter.com/BBCAfrica/status/1044186344153583616)
 * [Czy grecka straż przybrzeżna stosuje pushbacki](https://www.bellingcat.com/news/uk-and-europe/2020/06/23/masked-men-on-a-hellenic-coast-guard-boat-involved-in-pushback-incident/)
+* [Dom Przyjaźni koreańsko-rosyjskiej](dprk/dprk_wiki.md)
 
 ## Metryka zmian
 | Wersja       | Data       | Osoba             | Opis zmian                                      |
@@ -208,3 +170,5 @@ Używany system operacyjny należy dostosować do potrzeb i przeznaczenia. Warto
 | v1.0.0       | 08.03.2024 | Grzegorz Jaskuła  | Wersja bazowa                                   |
 | v1.0.0a      | 09.03.2024 | Grzegorz Jaskuła  | Pliki graficzne przeniesione do folderu /assets |
 | v1.0.1       | 20.03.2024 | Grzegorz Jaskuła  | Uzupełnienia, BIP, image search, literówki      |
+| v1.0.2       | 10.05.2024 | Grzegorz Jaskuła  | OPSEC przeniesiony w pełni do opsec_wiki.md     |
+| v1.0.3       | 10.05.2024 | Grzegorz Jaskuła  | Dodano case study DPRK                          |

@@ -106,6 +106,7 @@ nav:
     - Maltego: "osint/maltego/maltego_wiki.md"
     - Źródła: "osint/sources/sources_wiki.md"
     - OPSEC: "osint/opsec/opsec_wiki.md"
+    - Case Study - DPRK: "osint/dprk/dprk_wiki.md"
   - Reverse:
     - Wprowadzenie: "reverse/reverse_wiki.md"
   - Web:
