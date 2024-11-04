@@ -1,0 +1,1477 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../forensics/memory_forensics/memory_forensics_intro/">
+      
+      
+        <link rel="next" href="../maltego/maltego_wiki/">
+      
+      
+      <link rel="icon" href="../../assets/logo/PUTr_icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Wprowadzenie - PUTwiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../style/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aspekt-prawny" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+
+<!-- Header -->
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Nagłówek"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../.."
+      title="PUTwiki"
+      class="md-header__button md-logo"
+      aria-label="PUTwiki"
+      data-md-component="logo"
+    >
+      
+  <img src="../../assets/logo/PUTr_5050_mm.png" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PUTwiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Wprowadzenie
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="description-header">
+      Wikipedia koła naukowego PUTrequest_ na Politechnice Poznańskiej
+    </div>
+
+    <!-- Color palette toggle -->
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+
+    <!-- User preference: color palette -->
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+
+    <!-- Repository information -->
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  🏠
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../crypto/crypto_wiki/" class="md-tabs__link">
+          
+  
+  Crypto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../forensics/forensics_wiki/" class="md-tabs__link">
+          
+  
+  Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  OSINT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reverse/reverse_wiki/" class="md-tabs__link">
+          
+  
+  Reverse
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../web/web_wiki/" class="md-tabs__link">
+          
+  
+  Web
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PUTwiki" class="md-nav__button md-logo" aria-label="PUTwiki" data-md-component="logo">
+      
+  <img src="../../assets/logo/PUTr_5050_mm.png" alt="logo">
+
+    </a>
+    PUTwiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏠
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Crypto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Crypto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/crypto_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wprowadzenie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Forensics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Forensics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../forensics/forensics_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wprowadzenie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../forensics/forensics_commandline.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commandline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Disk forensics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Disk forensics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../forensics/disk_forensics/disk_forensics_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Disk forensics INTRO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../forensics/disk_forensics/ad1_files_handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obsługa plików AD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../forensics/memory_forensics/memory_forensics_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory forensics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    OSINT
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            OSINT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Wprowadzenie
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Wprowadzenie
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aspekt-prawny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspekt prawny
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Terminologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cykl-wywiadowczy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cykl wywiadowczy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zroda-informacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      Źródła informacji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Źródła informacji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-hacking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Hacking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyszukiwanie-obrazem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wyszukiwanie obrazem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opsec" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPSEC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciekawe-case-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ciekawe case study
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metryka-zmian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metryka zmian
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maltego/maltego_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maltego
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sources/sources_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Źródła
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../opsec/opsec_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OPSEC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dprk/dprk_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Case Study - DPRK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reverse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reverse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reverse/reverse_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wprowadzenie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/web_wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wprowadzenie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Wprowadzenie</h1>
+
+<p><strong>Biały wywiad</strong> (ang. <em>open-source intelligence</em>, OSINT, rozpoznanie otwartoźródłowe) - kategoria rozpoznania oraz forma wywiadu gospodarczego, polegająca na gromadzeniu informacji pochodzących z ogólnodostępnych źródeł. Wywiadowcy posługują się wyłącznie jawnymi i etycznymi metodami pozyskiwania informacji.</p>
+<p>Ważne fakty:</p>
+<ul>
+<li>Choć OSINT wywodzi się z tradycyjnej kryminalistyki tak codzienna praktyka pokazuje, ze przenika się z wieloma innymi dziedzinami, przede wszystkim z informatyką śledzczą (forensics).</li>
+<li>Swoje wymagania pod kątem wiedzy narzuci kazde śledztwo, a rozpoznawanie branż o których nie mamy pojęcia wymusi na nas zapoznanie się z prawami jakie nią kierują np. badając anomalie cenowe na rynku nawozów rolniczych będziesz musiał nauczyć się odrózniać fosforany od azotanów.</li>
+<li>Czynności operacyjne można podzielić na dwa rodzaje: rozpoznanie pasywne np. przeglądanie gotowych zbiorów danych jak baza KRS; oraz rozpoznanie aktynwe, w którym wchodzimy w interakcję z badanym podmiotem np. enumeracja subdomen.</li>
+<li>Zasadniczym ograniczeniem OSINTu jest granica dostępu do informacji, zarówno etyczna jak również wynikająca z aspektów prawnych czy ochrony prywatności. Niektóre czynności takie jak używanie np. wycieków baz danych są dyskusyjne, niektórzy uznają to wręcz za czerpanie korzyści z przestępstwa. Dla innych zaś materiały za <em>paywallem</em> również nie są materiałem całkowicie otwartym. Równie dyskusyjne są osobowe źródła informacji (OZI) zaliczanie w tradycyjnym wywiadzie do HUMINT. Granica co jest otwartym źródłem a co nie zależna jest od przyjętej polityki, metodologii śledztwa jak i podejścia wywiadowcy. Nieprzekraczalną granicą jest legalność działań choć i ono różni się w zależności od kraju i obowiązującego stanu prawnego.</li>
+<li>OSINT to ruletka. W niektórych przypadkach poznamy całą historię czyjegoś życia, w innych dana osoba może w ogóle nie istnieć.</li>
+<li>OSINT nie jest zjawiskiem nowym. Techniki otwartego wywiadu stosowano już w czasie I wojny światowej kiedy to nikt nie myślał o kodowaniu kanałowym łączności radiowej i ryzyku jej podsłuchiwania. Obecnie wraz z rozwojem społeczeństwa informacji zaczęto zwracać na niego uwagę, a prawdziwy rozgłos zyskał w momencie wybuchu wojny na Ukrainie. O historycznych przypadkach OSINTu przeczytasz <a href="https://www.intelmsl.com/osint-history/">tutaj</a>.</li>
+</ul>
+<h2 id="aspekt-prawny">Aspekt prawny<a class="headerlink" href="#aspekt-prawny" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Art. 267. Kodeksu Karnego [Bezprawne uzyskanie informacji]</p>
+<p>§  1.  Kto bez uprawnienia uzyskuje dostęp do informacji dla niego nieprzeznaczonej, otwierając zamknięte pismo, podłączając się do sieci telekomunikacyjnej lub przełamując albo omijając elektroniczne, magnetyczne, informatyczne lub inne szczególne jej zabezpieczenie,
+podlega grzywnie, karze ograniczenia wolności albo pozbawienia wolności do lat 2.</p>
+<p>§  2.  Tej samej karze podlega, kto bez uprawnienia uzyskuje dostęp do całości lub części systemu informatycznego.</p>
+<p>§  3.  Tej samej karze podlega, kto w celu uzyskania informacji, do której nie jest uprawniony, zakłada lub posługuje się urządzeniem podsłuchowym, wizualnym albo innym urządzeniem lub oprogramowaniem.</p>
+<p>§  4.  Tej samej karze podlega, kto informację uzyskaną w sposób określony w § 1-3 ujawnia innej osobie.</p>
+<p>§  5.  Ściganie przestępstwa określonego w § 1-4 następuje na wniosek pokrzywdzonego.</p>
+</blockquote>
+<p>Zgodnie z definicją OSINT opiera się o legalne i powszechnie dostępne źródła informacji wobec, których przepis ten nie znajduje zastosowania. Dotyczy on jednak szeroko rozumianego włamywania się do systemów i urządzeń. Jezeli np. udałoby nam się pozyskać login i hasło przechowywane w indeksowanym przez Google pliku, skorzystanie z takich poświadczeń stanowi przestępstwo. Podobnie z sytuacją gdy uda się wstrzelić poprzez przysłowiowe admin/admin.</p>
+<blockquote>
+<p>Art. 190a. Kodeksu Karnego [Uporczywe nękanie. Kradzież tożsamości]</p>
+<p>§  1.  Kto przez uporczywe nękanie innej osoby lub osoby dla niej najbliższej wzbudza u niej uzasadnione okolicznościami poczucie zagrożenia, poniżenia lub udręczenia lub istotnie narusza jej prywatność,
+podlega karze pozbawienia wolności od 6 miesięcy do lat 8.</p>
+<p>§  2.  Tej samej karze podlega, kto, podszywając się pod inną osobę, wykorzystuje jej wizerunek, inne jej dane osobowe lub inne dane, za pomocą których jest ona publicznie identyfikowana, przez co wyrządza jej szkodę majątkową lub osobistą.</p>
+<p>§  3.  Jeżeli następstwem czynu określonego w § 1 lub 2 jest targnięcie się pokrzywdzonego na własne życie, sprawca podlega karze pozbawienia wolności od lat 2 do 15.</p>
+<p>§  4.  Ściganie przestępstwa określonego w § 1 lub 2 następuje na wniosek pokrzywdzonego.</p>
+</blockquote>
+<p>Zastosowanie tego przepisu dotyczy głównie tworzenia kont operacyjnych. O ile mają one wyglądać jak najbardziej prawdziwie, tak korzystanie z danych istniejących osób nosi znamiona kradzieży tożsamosci. Możemy stworzyć konto na zmyślone personalia ze zdjęciem wygenerowanym przez AI. Nie możemy natomiast nazwać profilu Teofil Jesionowski i wrzucić na profilowe zdjęcia JM Rektora.</p>
+<blockquote>
+<p>Art. 6 pkt. 1 RODO</p>
+<p>Przetwarzanie jest zgodne z prawem wyłącznie w przypadkach, gdy – i w takim zakresie, w jakim – spełniony jest co najmniej jeden z poniższych warunków:</p>
+<p>a)     osoba, której dane dotyczą wyraziła zgodę na przetwarzanie swoich danych osobowych w jednym lub większej liczbie określonych celów;</p>
+<p>b)     przetwarzanie jest niezbędne do wykonania umowy, której stroną jest osoba, której dane dotyczą, lub do podjęcia działań na żądanie osoby, której dane dotyczą, przed zawarciem umowy;</p>
+<p>c)     <strong>przetwarzanie jest niezbędne do wypełnienia obowiązku prawnego ciążącego na administratorze;</strong></p>
+<p>d)     przetwarzanie jest niezbędne do ochrony żywotnych interesów osoby, której dane dotyczą, lub innej osoby fizycznej;</p>
+<p>e)     <strong>przetwarzanie jest niezbędne do wykonania zadania realizowanego w interesie publicznym lub w ramach sprawowania władzy publicznej powierzonej administratorowi;</strong></p>
+<p>f)      <strong>przetwarzanie jest niezbędne do celów wynikających z prawnie uzasadnionych interesów realizowanych przez administratora lub przez stronę trzecią</strong>, z wyjątkiem sytuacji, w których nadrzędny charakter wobec tych interesów mają interesy lub podstawowe prawa i wolności osoby, której dane dotyczą, wymagające ochrony danych osobowych, w szczególności gdy osoba, której dane dotyczą, jest dzieckiem.</p>
+</blockquote>
+<p>RODO określa podstawy przetwarzania danych osobowych osób fizocznych na terenie UE. Dla OSINTowców najważniejszy jest kontekst wypełnienia przez administratora obowiązków prawnych. Może to obejmować np. konieczność publikowania oświadczeń majątkowych przez osoby publiczne. Z drugiej strony art. 6 wspomina o zgodzie wyrażonej przez osobę, której dane dotyczą. Jeżeli jest to np. zgoda wydana Facebookowi (Meta) osoba taka sama poświadczyła, że zdaje sobie sprawę z faktu, że jej tresci będą dostępne w tym serwisie i mogą być dostępne publicznie w określonych przypadkach. Tym samym RODO nie określa zakresu działań OSINTowców, a jedynie definiuje dlaczego pewne informacje mogą znaleźć się w sferze publicznej.</p>
+<blockquote>
+<p><a href="https://sip.lex.pl/akty-prawne/dzu-dziennik-ustaw/dostep-do-informacji-publicznej-16913107">Ustawa z dnia 6 września 2001 r. o dostępie do informacji publicznej</a></p>
+<p>Art. 1. [Definicja informacji publicznej. Zakres zastosowania przepisów ustawy]</p>
+<ol>
+<li>Każda informacja o sprawach publicznych stanowi informację publiczną w rozumieniu ustawy i podlega udostępnieniu na zasadach i w trybie określonych w niniejszej ustawie.</li>
+</ol>
+<p>...</p>
+<p>Art. 2. [Prawo do informacji publicznej]</p>
+<ol>
+<li>
+<p>Każdemu przysługuje, z zastrzeżeniem art. 5, prawo dostępu do informacji publicznej, zwane dalej "prawem do informacji publicznej".</p>
+</li>
+<li>
+<p>Od osoby wykonującej prawo do informacji publicznej nie wolno żądać wykazania interesu prawnego lub faktycznego.</p>
+</li>
+</ol>
+</blockquote>
+<p>Informacja publiczna jest szerokim terminem i zależy od interpretacji danego organu. W ogólności może być wykorzystywana do uzyskiwania informacji o szeroko rozumianych sprawach publicznych np. o formie wykorzystania funduszy państwowych. Do informacji publicznej zaliczono nawet <a href="https://sip.lex.pl/akty-prawne/dzu-dziennik-ustaw/aplikacja-mobywatel-21848189/art-82">kod źródłowy mObywatela, który ma zostać kiedyś opublikowany</a>. Informacje publiczne często agregowane są w Biuletynach Informacji Publicznych (BIP).</p>
+<p><strong>Jeżeli zasób jest dostępny publicznie nie potrzebujemy zgody na skorzystanie z niego.</strong> Zastosowanie mogą mieć tu jednak odrębne przepisy np. ustawa o prawie autorskim i prawach pokrewnych.</p>
+<h2 id="terminologia">Terminologia<a class="headerlink" href="#terminologia" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Figurant - cel rozpoznania czyli dana osoba, firma lub instytucja </li>
+<li>Selektor - informacja powiązana z figurantem np. e-mail, NIP, adres zamieszkania czy imię psa</li>
+<li>Transformacja - przekształcenie selektora w inny selektor</li>
+<li>Śledztwo - zbiór działań mających uzyskać określone dane dot. figuranta</li>
+<li>
+<p>False-positive (błąd pierwszego rodzaju) - informacja fałszywie dodatnia</p>
+</li>
+<li>
+<p>HUMINT, <em>human intelligence</em> - osobowe źródła informacji (OZI)</p>
+</li>
+<li>SOCMINT, SMINT, <em>social media intelligence</em> - wywiad mediów społecznościowych</li>
+<li>SIGINT, <em>signal intelligence</em> - rozpoznanie elektromagnetyczne</li>
+<li>TECHINT, <em>technical intelligence</em> - rozpoznanie techniczne</li>
+<li>GEOINT, <em>geographical intelligence</em> - rozpoznanie w oparciu o geolokalizację i kartografię</li>
+<li>FININT, <em>finance intelligence</em> - rozpoznanie finansowe</li>
+<li>OPSEC, <em>operations security</em> - bezpieczeństwo operacyjne</li>
+</ul>
+<h3 id="cykl-wywiadowczy">Cykl wywiadowczy<a class="headerlink" href="#cykl-wywiadowczy" title="Permanent link">&para;</a></h3>
+<p>Polski proces wywiadowczy definiuje doktryna <em>rozpoznanie wojskowe D/2</em>, zawiera czteroetapowy model cyklu rozpoznawczego realizowanego przez Wojsko Polskie i polskie służby wywiadowcze. Nie jest to jednak jedyny model. Bardzo często stosuje się też model amerykański oraz australisjki. W ogólności można przyjąć następujący cykl zgodny ze standardami NATO, który jest klasycznym modelem wojskowym.</p>
+<ol>
+<li><strong>Ukierunkowanie</strong> to faza inicjująca proces rozpoznania lub nadająca mu nowy kierunek, cel bądź zakres. Dzieli się ona na dwa etapy – określenie wymagań informacyjnych i przygotowanie działań rozpoznawczych;</li>
+<li><strong>Gromadzenie</strong> polega na wykorzystaniu potencjału informacyjnego (wszystkich dostępnych źródeł) i wykonawczego systemu rozpoznania (operacyjnego pozyskiwania danych) w celu zdobycia danych oraz dostarczenia ich do przetworzenia w wiadomości rozpoznawcze. Gromadzenie danych również dzieli się na dwa etapy – pozyskiwanie (użycie wszelkich źródeł i sposobów zdobywania danych oraz ich koordynacja) i zbieranie (terminowe skupienie pochodzących z różnych źródeł, rozproszonych zbiorów informacji, a następnie przekazanie ich do komórek analitycznych);</li>
+<li><strong>Przetwarzanie</strong> to przekształcanie zgromadzonych danych w wiadomości rozpoznawcze. Głównymi etapami tej fazy są: zestawianie (ewidencja), ocena (pewności źródła i wiarygodności), analiza i integracja oraz interpretacja;</li>
+<li><strong>Rozpowszechnianie</strong> jest terminowym i celowym przekazywaniem wiadomości rozpoznawczych z pomocą odpowiednich środków w określonej formie uprawnionym podmiotom. Owe formy dzielą się na: rozpowszechnianie elektroniczne, pisemne i graficzne, a także ustne.</li>
+</ol>
+<p><img alt="cyklwywiadowczy" src="../../assets/osint/intro_australianIntelCycle.jpg" style="display: block; margin: 0 auto;" /></p>
+<figcaption>Australijski model cyklu wywiadoczego (źródło: Wikipedia)</figcaption>
+
+<p>W nomenklaturze NATO wyróżnia się ponadto 4 etapy przetwarzania informacji otwartoźródłowej:</p>
+<ul>
+<li>Open Source Data (OSD) - surowe dane z otwartych źródeł niepodane żadnej obróbce.</li>
+<li>Open Source Information (OSIF) - dane poddane odpowiedniemu skategoryzowaniu, przetworzeniu (np. dekodowaniu) i wstępnej analizie.</li>
+<li>Open Source Intelligence (OSINT) - dane w pełni przeanalizowane, zwykle poddane dodatkowemu opisowi. Dopiero na tym etapie możemy zacząć mówić o danych wywiadowczych.</li>
+<li>Validated Open Source Intelligence (OSINT-V) - dane przeanalizowane dodatkowo zweryfikowane i skorelowane w oparciu o inne dostępne materiały wywiadowcze.</li>
+</ul>
+<p>W swoich założeniach śledztwo ma doprowadzić do ustalenia konkretnej informacji np. czy osoba X jest udziałowcem spółki Y. Przeprowadzenie śledztwa, które zbierze "wszystko" poskutkuje jedynie ślepą nieskończoną pętlą, w której będziemy oddalać się od celu śledztwa. Innymi słowy nie ma sensu badać rodziny figuranta 9 pokoleń wstecz.</p>
+<h2 id="zroda-informacji"><a href="../sources/sources_wiki/">Źródła informacji</a><a class="headerlink" href="#zroda-informacji" title="Permanent link">&para;</a></h2>
+<h3 id="google-hacking">Google Hacking<a class="headerlink" href="#google-hacking" title="Permanent link">&para;</a></h3>
+<p>Google hacking – termin opisujący stosowanie specjalnie dobranych zapytań dla popularnej wyszukiwarki internetowej Google, które pozwalają na odszukanie informacji przydatnych z punktu widzenia analizy bezpieczeństwa innych witryn WWW. Wbrew nazwie działania takie można prowadzić również dla innych popularnych wyszukiwarek jak Bing, Yandex itp.</p>
+<ul>
+<li><a href="https://www.google.pl/intl/pl/help/operators.html">Operatory Google</a></li>
+<li><a href="https://support.microsoft.com/en-gb/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Operatory Bing</a>. Warto wspomnieć o unikalnym dla Binga operatorze <em>IP</em>, który ogranicza wyniki do danego adresu IP.</li>
+<li><a href="https://yandex.com/support/direct/keywords/symbols-and-operators.html">Operatory Yandex</a></li>
+</ul>
+<p>Przykłady dorków:</p>
+<ul>
+<li>inurl:microsoft filetype:iso – pliki obrazów płyt ze stron zawierających w URL słowo Microsoft</li>
+<li>filetype:bak inurl:"htaccess|passwd|shadow|htusers" – pliki konfiguracyjne serwisów WWW
+v intitle:"Index of" .mysql_history – historia zapytań SQL z serwisów WWW</li>
+<li>90010100000..99123199999 +pesel filetype:xls – pliki Excela zawierające numery PESEL z danego przedziału</li>
+<li>site:cat.put.poznan.pl filetype:pdf intitle:plan semestr 7 – plany zajęć w formie PDF dla semestru siódmego ze strony WIiT.</li>
+</ul>
+<p>Należy pamiętać, że Google nie musi indeksować każdego zasobu, ale z drugiej strony indeksuje często to co niekoniecznie powinno być publicznie dostępne. W przypadku wysyłania wielu złożonych zapytań Google może wymagać wypełniania Captchy.</p>
+<p><strong>Nie każda wyszukiwarka musi zwrócić jednakowe wyniki. W niektórych przypadkach Yandex może dać lepsze wyniki od Googla lub odwrotnie. Dotyczy to zarówno dorków jak i wyszukiwania obrazem.</strong></p>
+<h3 id="wyszukiwanie-obrazem">Wyszukiwanie obrazem<a class="headerlink" href="#wyszukiwanie-obrazem" title="Permanent link">&para;</a></h3>
+<p>Wyszukiwarki umożliwiają wyszukiwanie wsteczne z użyciem obrazu. Ich możliwości są jednak zróżnicowane np. Bing potrafi odczytywać tylko znaki w alfabecie łacińskim. Algorytmy wyszukiwarek bazują na odmiennych elementach, niektóre na wizualnym podobieństwie, inne zaś na uczeniu maszynowym. Więcej o skuteczności wyszukiwania obrazem znajdziesz <a href="https://sekurak.pl/jak-wyszukiwarki-radza-sobie-z-analiza-zawartosci-obrazow-osint-hints/">tutaj</a>.</p>
+<h2 id="software">Software<a class="headerlink" href="#software" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.maltego.com">Maltego</a> - oprogramowanie pełni dwie role. Z jednej strony pozwala na obrazowanie selektorów w postaci grafów i umozliwia stworzenie całej "tablicy dowodów". Z drugiej pozwala ono na automatyzację transformacji np. poprzez integrację z róznymi API. Jest jedną z popularniejszych aplikacji, ale pomimo popularnego przeświadczenia nie zrobi śledztwa za nas. Więcej o Maltego <a href="../maltego/maltego_wiki/">TUTAJ</a>.</li>
+<li><a href="https://github.com/paralax/Recon-ng">Recon-ng</a> - alternatywne dla Maltego narzędzie słuzące do prowadzenia transformacji automatycznych w oparciu o dołączone wtyczki.</li>
+<li><a href="https://github.com/sherlock-project/sherlock">Project Sherlock</a> - oprogramowanie do wyszukiwania kont w oparciu o pseudonim.</li>
+<li><a href="https://github.com/smicallef/spiderfoot">Spiderfoot</a>, <a href="https://github.com/laramies/theHarvester">TheHarvester</a> - programy przeznaczone do threat intelligence.</li>
+<li><a href="https://exiftool.org">Exiftool</a> - oprogramowanie do przeglądania metadanych. Podstawowa wersja jest tekstowa.</li>
+<li><a href="https://www.shodan.io">Shodan</a> - taki Google, ale wyszukujący urządzenia sieciowe zamiast stron WWW.</li>
+<li><a href="https://www.hunch.ly">Hunchly</a> - oprogramowanie integrowane z przeglądarką internetową. Pozwala oznaczać i archiwizować konkretne zasoby przeglądane w internecie w oparciu o słowa kluczowe.</li>
+<li><a href="https://github.com/ytdl-org/youtube-dl">Youtube-DL</a> - oprogramowanie słuzące do pobierania filmów m.in. z Youtuba. Z powodzeniem działa tez na innych platformach.</li>
+<li><a href="https://chromewebstore.google.com/detail/data-scraper-easy-web-scr/nndknepjnldbdbepjfgmncbggmopgden?pli=1">Data Miner</a> - wtyczka do Chroma umozliwiająca automatyczne pobieranie treści ze stron internetowych i ich zapisywania w ustrukturalizowanym pliku.</li>
+<li><a href="https://www.downloadhelper.net">VideoDownloadHelper</a> - wtyczka służąca do pobierania wideo ze stron WWW.</li>
+<li><a href="https://www.downthemall.net">DownThemAll</a> - wtyczka do masowego pobierania plików ze stron WWW.</li>
+<li><a href="https://www.kali.org/tools/dnsenum/">dnsenum</a> - narzędzie do enumeracji przestrzeni DNS. Pozwala na znajdowanie subdomen, które nie są przechowywane w bazach WHOIS.</li>
+</ul>
+<h2 id="opsec"><a href="../opsec/opsec_wiki/">OPSEC</a><a class="headerlink" href="#opsec" title="Permanent link">&para;</a></h2>
+<h2 id="ciekawe-case-study">Ciekawe case study<a class="headerlink" href="#ciekawe-case-study" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.bellingcat.com/news/uk-and-europe/2018/10/09/full-report-skripal-poisoning-suspect-dr-alexander-mishkin-hero-russia/">Otrucie Skripala</a></li>
+<li><a href="https://medium.com/@brichett13/social-media-intelligence-case-study-an-osint-data-engineers-investigation-into-american-813ecf2463d6">Rosyjska dezinformacja w USA</a></li>
+<li><a href="https://youtu.be/oKYBBVQa8NY">Sprawa Natalii Janoszek</a></li>
+<li><a href="https://keyfindings.blog/2019/08/28/unravelling-the-norton-scam/">Kampania scamowa Norton</a></li>
+<li><a href="https://twitter.com/BBCAfrica/status/1044186344153583616">Anatomy of a killing</a></li>
+<li><a href="https://www.bellingcat.com/news/uk-and-europe/2020/06/23/masked-men-on-a-hellenic-coast-guard-boat-involved-in-pushback-incident/">Czy grecka straż przybrzeżna stosuje pushbacki</a></li>
+<li><a href="../dprk/dprk_wiki/">Dom Przyjaźni koreańsko-rosyjskiej</a></li>
+</ul>
+<h2 id="metryka-zmian">Metryka zmian<a class="headerlink" href="#metryka-zmian" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Wersja</th>
+<th>Data</th>
+<th>Osoba</th>
+<th>Opis zmian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.0.0</td>
+<td>08.03.2024</td>
+<td>Grzegorz Jaskuła</td>
+<td>Wersja bazowa</td>
+</tr>
+<tr>
+<td>v1.0.0a</td>
+<td>09.03.2024</td>
+<td>Grzegorz Jaskuła</td>
+<td>Pliki graficzne przeniesione do folderu /assets</td>
+</tr>
+<tr>
+<td>v1.0.1</td>
+<td>20.03.2024</td>
+<td>Grzegorz Jaskuła</td>
+<td>Uzupełnienia, BIP, image search, literówki</td>
+</tr>
+<tr>
+<td>v1.0.2</td>
+<td>10.05.2024</td>
+<td>Grzegorz Jaskuła</td>
+<td>OPSEC przeniesiony w pełni do opsec_wiki.md</td>
+</tr>
+<tr>
+<td>v1.0.3</td>
+<td>10.05.2024</td>
+<td>Grzegorz Jaskuła</td>
+<td>Dodano case study DPRK</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Ostatnia aktualizacja">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">4 listopada 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Utworzony">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">4 listopada 2024</span>
+  </span>
+
+    
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Kontrybutorzy">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/gjaskula99" class="md-author" title="@gjaskula99">
+          
+          <img src="https://avatars.githubusercontent.com/u/81091594?v=4&size=72" alt="gjaskula99">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Powrót do góry
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Stopka" >
+        
+          
+          <a href="../../forensics/memory_forensics/memory_forensics_intro/" class="md-footer__link md-footer__link--prev" aria-label="Poprzednia strona: Memory forensics">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Poprzednia strona
+              </span>
+              <div class="md-ellipsis">
+                Memory forensics
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../maltego/maltego_wiki/" class="md-footer__link md-footer__link--next" aria-label="Następna strona: Maltego">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Następna strona
+              </span>
+              <div class="md-ellipsis">
+                Maltego
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://putrequest.put.poznan.pl/" target="_blank" rel="noopener" title="putrequest.put.poznan.pl" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M455.93 23.2c-26.7 6.8-68.14 28.49-114.58 67.46A206 206 0 0 0 240 64C125.13 64 32 157.12 32 272s93.13 208 208 208 208-93.13 208-208a207.25 207.25 0 0 0-58.75-144.81 155.4 155.4 0 0 0-17 27.4A176.16 176.16 0 0 1 417.1 272c0 97.66-79.44 177.11-177.09 177.11a175.8 175.8 0 0 1-87.63-23.4c82.94-107.33 150.79-37.77 184.31-226.65 5.79-32.62 28-94.26 126.23-160.18 8.08-5.43 2.43-18.08-6.99-15.68M125 406.4A176.66 176.66 0 0 1 62.9 272c0-97.66 79.45-177.1 177.1-177.1a174 174 0 0 1 76.63 17.75C250.64 174.76 189.77 265.52 125 406.4"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/people/PUTrequest_/100086086582030/" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/putrequest" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pl.linkedin.com/company/putrequest" target="_blank" rel="noopener" title="pl.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "content.code.copy", "content.tabs.link", "navigation.footer", "toc.integrate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 3rem;
+    width: auto;
+}
+
+.description-header{
+    font-size: medium;
+    font-style: italic;
+    display: block;
+}
+
+@media screen and (max-width: 800px){
+    .description-header{
+        display: none;
+    }
+}
