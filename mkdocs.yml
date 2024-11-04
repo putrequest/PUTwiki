@@ -37,7 +37,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - git-committers:
-      repository: squidfunk/mkdocs-material
+      repository: putrequest/PUTwiki
       branch: main
 
 markdown_extensions:
