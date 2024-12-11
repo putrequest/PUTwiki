@@ -10,10 +10,10 @@ W skład koła wchodzą sekcje:
 
 ![Hackerman meme](assets/pics/hackerman_meme.jpg){width="500", align=right}
 
-- Analiza
 - [Crypto](crypto/crypto_wiki.md)
 - [Forensics](forensics/forensics_wiki.md)
 - [OSINT](osint/osint_wiki.md)
+- [RED](red/red_wiki.md)
 - [Reverse](reverse/reverse_wiki.md)
 - [Web](web/web_wiki.md)
 
